@@ -1,0 +1,41 @@
+@import "reset";
+@import "vars";
+@import "fonts";
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body, html {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+}
+
+
+//MODULES
+@import "blocks/button";
+@import "blocks/popup";
+@import "blocks/cart_module";
+@import "blocks/blocks_overlay";
+@import "blocks/products";
+
+
+//BLOCKS
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/new";
+@import "blocks/featured";
+@import "blocks/about";
+@import "blocks/bottom";
+@import "blocks/footer";
+
+
+@import "media";
+
+.hidden {
+
+}

@@ -1,0 +1,21 @@
+.footer {
+  margin-bottom: 230px;
+
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.footer__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 65px;
+  padding-left: 30px;
+
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.footer__name {
+  color: $red;
+}

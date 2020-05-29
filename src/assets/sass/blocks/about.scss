@@ -1,0 +1,67 @@
+.about__text {
+  padding: 0 0 35px 30px;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__image {
+  max-width: 145px;
+  max-height: 165px;
+  margin-right: 25px;
+}
+
+.about__choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 50px;
+
+  background-color: $black;
+
+}
+
+.about__register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 40px;
+
+  background-color: $blue;
+}
+
+.about__checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 40px;
+
+  background-color: $red;
+}
+
+.about__span {
+  font-size: 1.875rem;
+  color: $white;
+}
+
+.about__registration {
+  text-align: center;
+  padding: 30px 0;
+
+  border-bottom: 1px solid #b9b9b9;
+
+  a {
+    display: inline-block;
+    padding: 15px 240px;
+
+    color: white;
+
+    background-color: $blue;
+
+    &:hover {
+      background-color: darken($blue, 5);
+    }
+  }
+}

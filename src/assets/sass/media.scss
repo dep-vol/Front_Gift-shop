@@ -1,0 +1,350 @@
+.container {
+  max-width: $container;
+  margin: 0 auto;
+}
+
+//============================================== max - 1200px ==============================================
+
+@media (max-width: 1200px) {
+  //============== Container ==============
+
+  .container {
+    max-width: $container_md;
+  }
+
+  //============== /Container ==============
+
+  //============== header ==============
+
+  .header__category {
+    > a {
+      padding: 20px;
+    }
+  }
+
+  .submenu {
+    position: fixed;
+    left: 1%;
+    min-width: 98%
+  }
+
+  .submenu__item {
+    justify-content: center;
+  }
+
+  //============== /header ==============
+
+  //============== main ==============
+
+  .main__form {
+
+    label {
+      left: 10px;
+
+      font-size: .8rem;
+
+      span {
+        font-size: .8rem;
+      }
+    }
+  }
+
+  //============== /main ==============
+
+  //============== about ==============
+
+  .about__buttons {
+    flex-wrap: wrap;
+  }
+
+  .about__checkout, .about__register, .about__choose {
+    flex: 0 1 100%;
+    padding: 14px 0;
+  }
+
+  .about__registration {
+    display: flex;
+
+    a {
+      flex: 1;
+      padding: 15px 0;
+    }
+  }
+
+  //============== about ==============
+}
+
+//============================================== max - 900px ==============================================
+
+@media (max-width: 900px) {
+  //============== Container ==============
+  .container {
+    max-width: $container_sm;
+  }
+  //============== /Container ==============
+
+  //============== header ==============
+  .header__grid {
+    grid-template-rows: auto;
+  }
+
+  .header__top {
+    grid-column: 1/-1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 5px;
+  }
+
+  .header__logo {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .header__control {
+    grid-column: 1/-1;
+    grid-row: 3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__bottom {
+    grid-column: 1/3;
+    grid-row: 4;
+    margin-top: 5px;
+  }
+
+  .header__category>a {
+    padding: 10px;
+  }
+  //============== /header ==============
+
+  //============== main ==============
+
+  .main__grid {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 25vh 25vh 25vh 25vh 25vh;
+    grid-template-areas:
+            "mens mens"
+            "womens womens"
+            "baby baby"
+            "search search"
+            "crafts crafts"
+            "jewelry jewelry";
+    grid-gap: 5px;
+  }
+
+  .main__span {
+      position: static;
+      width: 300px;
+      height: 65px;
+      padding: 0 20px;
+
+      font-size: 2.5rem;
+
+      transform: rotate(0deg);
+  }
+
+  .main__go {
+    height: 77px;
+    left: 68%;
+  }
+
+  .main__forward {
+    transform: rotate(0deg);
+  }
+
+  .main__form {
+    label {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 75%;
+    }
+  }
+
+  //============== /main ==============
+
+  //============== bottom ==============
+
+  .bottom__grid {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 10px;
+    padding: 55px 0;
+  }
+
+  .bottom__block {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 0;
+
+    border-bottom: 1px solid #b9b9b9;
+
+    &--social {
+      grid-column: 1/-1;
+      grid-template-columns: 1fr;
+      justify-items: stretch;
+    }
+  }
+
+  .bottom__title {
+    font-size: 1rem;
+  }
+
+  .bottom__button {
+    margin-right: 5px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+
+  //============== /bottom ==============
+}
+
+//============================================== max - 660px ==============================================
+
+@media (max-width: 660px) {
+  //============== Container ==============
+  .container {
+    padding: 5px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  //============== /Container ==============
+
+  //============== header ==============
+
+  .header__logo {
+    width: 100px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .header__menu-link {
+    margin-right: 5px;
+
+    a {
+      font-size: .8rem;
+    }
+  }
+
+  .header__categories {
+    flex-direction: column;
+
+  }
+
+  .header__control {
+    justify-content: flex-end;
+  }
+
+  .header__control-link {
+    padding: 5px 10px;
+    margin-right: 2px;
+
+    font-size: .8rem;
+
+    &:nth-child(3) {
+      padding-right: 10px;
+      &:after {
+        display: none;
+      }
+    }
+
+    &:nth-child(4) {
+      padding-right: 10px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .header__category>a {
+    font-size: .8rem;
+
+    &:hover {
+
+      +.submenu {
+        display: none;
+      }
+    }
+  }
+
+  //============== /header ==============
+
+  //============== main ==============
+
+  .cart_module {
+    &--crafts {
+      .cart_module__text {
+        padding: 15px;
+      }
+    }
+  }
+
+  .popup__title {
+    font-size: 1.85rem;
+  }
+
+  .main__text {
+    max-width: 370px;
+
+    font-size: 1rem;
+  }
+
+  .main__search {
+    padding: 0 15px;
+  }
+
+  //============== /main ==============
+
+  //============== new ==============
+
+  .products__left, .products__right {
+    height: 50px;
+    width: 50px;
+  }
+
+  .products__title {
+   font-size: 1.6rem;
+  }
+
+  //============== /new ==============
+}
+
+//============================================== max - 660px landscape ==============================================
+
+@media (max-width: 660px) and (orientation: landscape) {
+  .main__grid {
+    grid-template-rows: 80vw 55vw 55vw 55vw 55vw 55vw;
+  }
+}
+
+//============================================== Individual ==============================================
+
+@media (max-width: 500px) {
+  .featured__body {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__body {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

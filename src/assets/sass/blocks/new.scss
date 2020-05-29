@@ -1,0 +1,47 @@
+.new {
+
+}
+
+.new__slider {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(200px,auto);
+
+}
+
+.new__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 15px;
+
+
+
+  .cart_module {
+    display: none;
+  }
+
+  &:hover {
+    .cart_module{
+      display: flex;
+    }
+
+  }
+
+
+  &--women {
+    background: url("../img/new_1.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  &--baby {
+    background: url("../img/new_2.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+
+  &--men {
+    background: url("../img/new_3.jpg") no-repeat 50% 50%;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,34 @@
+.popup {
+  padding: 20px;
+  max-width: 370px;
+  z-index: 1;
+
+  background-color: rgba(54,42,79,.8);
+
+  &--women {
+    padding: 15px;
+    max-width: 282px;
+
+    .popup__title {
+      font-size: 1.85rem;
+    }
+
+    .popup__subtitle {
+      font-size: .75rem;
+    }
+  }
+}
+
+.popup__title {
+  color: $red;
+  font-family: Aparajita sans-serif;
+  font-size: 3.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.popup__subtitle {
+  font-size: .8125rem;
+  color: $white;
+  text-transform: uppercase;
+}

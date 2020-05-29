@@ -1,0 +1,54 @@
+.submenu {
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 15px;
+  min-width: 264px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+
+  background-color: rgba(255,255,255,.9);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.33);
+  transition: transform .3s ease;
+
+  transform: scale(0);
+
+}
+
+.submenu__item {
+  display: flex;
+  padding: 20px 0;
+
+  border-bottom: 1px solid #cacaca;
+
+}
+
+
+
+.submenu__title {
+  margin-bottom: 6px;
+
+  color: $red;
+  font-size: 16px;
+}
+
+.submenu__subtitle {
+  font-size: .875rem;
+  color: $black;
+}
+
+.submenu__img {
+  margin-right: 12px;
+}
+
+.submenu__btn {
+  margin-top: 5px;
+  padding: 5px 25px;
+}
+
+.submenu__link {
+  margin-top: 15px;
+
+  color: $red;
+
+}
