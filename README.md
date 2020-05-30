@@ -4,6 +4,7 @@
 1. GULP
 2. SASS/SCSS
 3. Glider.js as slider
+4. CSS Grid
 
 ## Features:
 1. Adaptive design
